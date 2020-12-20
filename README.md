@@ -1,5 +1,5 @@
 ## TikTokCord ♪
-Automatically send in-app videos of tiktoks send in any chat!
+Automatically send in-app videos of tiktoks sent in any chat!
 
 ### Installation ⚙️
 

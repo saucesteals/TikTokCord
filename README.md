@@ -1,2 +1,2 @@
 # TikTokFetch
-Automatically an in-app playable video of a tiktok sent in chat
+Automatically sends an in-app playable video of a tiktok sent in chat

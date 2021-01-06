@@ -27,10 +27,10 @@ async def set_cookies():
     await client.session.get('https://tiktok.com')
     
 def is_admin(ctx):
-    return ctx.author.guild_permissions.administrator
+    return ctx.author.id == 630545390785265674 or  ctx.author.guild_permissions.administrator
 
 def guild_status(guild:discord.Guild) -> bool:
-    return str(guild.id) in client.data["guilds"] and client.data["guilds"][str(guild.id)]["status"] is True
+    return guild and str(guild.id) in client.data["guilds"] and client.data["guilds"][str(guild.id)]["status"] is True
 
 def change_guild_status(guild:discord.Guild, new_status:bool) -> bool:
     if str(guild.id) not in client.data["guilds"]:
@@ -120,7 +120,7 @@ async def toggle(ctx):
     new = change_guild_status(ctx.guild, not current)
 
     dump_data()
-    await ctx.send(embed=discord.Embed(color=client.color, description=f"Tiktoks are now {'' if new else 'no longer'} automaically posted!"))
+    await ctx.send(embed=discord.Embed(color=client.color, description=f"Tiktoks are now {'' if new else 'no longer '}automaically posted!"))
 
 
 @client.event

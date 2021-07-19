@@ -1,5 +1,5 @@
 # ⚠️ Warning ⚠️
-# TikTokCord is **deprecated** in favor of its successor [tiktok-previews](https://github.com/saucesteals/tiktok-previews)
+## TikTokCord is **deprecated** in favor of its successor [tiktok-previews](https://github.com/saucesteals/tiktok-previews)
 ---
 ## TikTokCord ♪
 Automatically send in-app videos of tiktoks sent in any chat!
